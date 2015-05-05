@@ -1,0 +1,21 @@
+
+
+<div class="custom-container tweet-container" ng-repeat="tweet in tweetsList | filter: nameFilter">
+
+    <div>
+        <a href="#/listview/{{tweet.user.id}}"><img ng-src="img/twitter.jpg"/> {{tweet.user.name}} </a>
+    </div>
+    <div style="text-align: right"> @{{searchTerm}} </div>
+    <hr>
+    <div class="default-text">{{tweet.text}}</div>
+    <hr>
+    <div class="default-detail">{{tweet.created_at.toString().replace("+0000","")}}</div>
+    <hr>
+    <div class="default-detail">{{tweet.retweet_count}} RETWEETS {{tweet.favorite_count}} FAVORITES</div>
+    <hr>
+    <div>
+        <img  ng-src="img/geo.png"/>
+        <img style="padding-left: 10px; padding-right: 10px;" ng-src="img/retweet.png"/>
+        <img ng-src="img/star.png"/>
+    </div>
+</div>

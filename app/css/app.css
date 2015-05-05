@@ -1,0 +1,120 @@
+/* app css stylesheet */
+
+body {
+    background-color: #add8e6;
+    font-family: expressway;
+}
+
+div {
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: left;
+}
+
+p {
+    margin: 2px;
+    padding: 2px;
+    padding-left: 30px;
+}
+
+img {
+    width: auto;
+    height: 20px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    font-family: expressway;
+    src: url('fonts/expressway rg.ttf');
+}
+
+.custom-header {
+    background-color: #add8e6;
+    width: 100%;
+    color: #ffffff;
+    margin-top: 3%;
+}
+
+.custom-container {
+    background-color: slategray;
+    width: 100%;
+    height: 100%;
+}
+
+.custom-container {
+    background-color: #ffffff;    
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.tweet-container {
+    width: 250px;
+    float:left;
+}
+
+.detail-container {
+    width: 98%;
+}
+
+.default-text {
+    word-wrap: break-word;
+    font-size: 22px;
+    margin: 0px;
+}
+
+.default-detail {
+    color: #808080;
+    margin: 1px;
+}
+
+.hint-container {
+    width:100%;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+    text-align: right;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.profile-image{
+    width: auto;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.list-image {
+    width: auto;
+    height: 120px;
+}
+
+.list-container {
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+

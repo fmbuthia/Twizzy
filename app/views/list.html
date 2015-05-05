@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+            <span class="input-group-addon" >@</span>
+            <input type="text" class="form-control"  placeholder="traffic seattle?" ng-model="searchTerm" >
+                <span class="input-group-btn">
+                    <button class="btn btn-default" ng-click="search()" type="button">Go!</button>
+                </span>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Filter for..." ng-model="nameFilter" >
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                </span>
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive list-container">
+    <table class="table">
+        <thead>
+
+        </thead>
+        <tbody>
+        <tr ng-repeat="tweet in tweetsList | filter: nameFilter">
+            <td class="default-text">{{$index + 1}}</td>
+            <td>
+                <img ng-src="{{tweet.user.profile_image_url.toString().replace('_normal','')}}" alt="User" class="img-rounded list-image">
+            </td>
+            <td class="default-text"><a href="#/listview/{{tweet.user.id}}"> {{tweet.user.name}} </a></td>
+            <td class="default-text"> {{tweet.text}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+

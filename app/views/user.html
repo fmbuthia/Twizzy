@@ -1,0 +1,22 @@
+
+<div class="custom-container detail-container">
+    <div class="container" >
+        <img class="profile-image center" ng-src="{{tweeterDetails.profile_image_url.toString().replace('_normal','')}}" />
+    </div>
+    <hr>
+    <div class="center default-text">{{tweeterDetails.name}}</div>
+    <hr>
+    <div class="center default-text">@{{tweeterDetails.screen_name}}</div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 center default-text">Tweets</div>
+        <div class="col-xs-6 col-sm-4 center default-text">Following</div>
+        <div class="col-xs-6 col-sm-4 center default-text">Followers</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 center default-text">{{tweeterDetails.statuses_count}}</div>
+        <div class="col-xs-6 col-sm-4 center default-text">{{tweeterDetails.following || 0}}</div>
+        <div class="col-xs-6 col-sm-4 center default-text">{{tweeterDetails.followers_count}}</div>
+
+    </div>
+</div>
